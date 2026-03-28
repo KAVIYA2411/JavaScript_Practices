@@ -1,0 +1,15 @@
+let num = 9;
+let square = num * num;
+let sum = 0;
+
+while(square > 0){
+    let digit = square % 10;
+    sum = sum + digit;
+    square = (square - digit) / 10;
+}
+
+if(sum === num){
+    console.log("Neon Number");
+}else{
+    console.log("Not Neon");
+}
